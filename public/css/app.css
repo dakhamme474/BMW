@@ -1,7 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 3000px;
 }
 .logo{
 
@@ -27,10 +34,13 @@
     justify-content: space-between;
     width: 100%;
     height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 3000;
 
 }
 .info {
-list-style: none;
+
 height: 100%;
 flex: 1;
 display: flex;
@@ -43,21 +53,18 @@ justify-content: space-between;
  align-items: center;
 }
 .info ul li {
-
+list-style: none;
     padding: 20px;
 }
 .info ul li a{
     text-decoration: none;
     color: white;
-    font-size: 22px;
-    
-    
+    font-size: 18px;
     }
     .info ul li a:hover{
         border-bottom: 3px solid white;
         transition: 0.2s;
         padding: 3px 0;
-        
         }
 .contact{
     display: flex;
@@ -65,29 +72,50 @@ justify-content: space-between;
     align-items: center;
     width: 15%;
     height: 100%;
-   
 }
 .contact a{
     width:100%;
     height: 100%;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     color:white ;
     display: flex;
     align-items: center;
     justify-content: center;
-    mix-blend-mode:difference;
-
+    mix-blend-mode:difference;  
 }
-
 .contact:hover{
     background-color: white;
     color: black;
 }
-
 .logo img:hover{
     animation: rotate 1.8s    infinite ;
-    animation-timeline:;
+    animation-timeline:5s;
+}
+.fixed-vd{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    
+}
+.bmw{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bmw video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.bmw::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 @keyframes rotate {
     0%{
@@ -97,12 +125,16 @@ justify-content: space-between;
         transform: rotate(-360deg);
     }
 }
-.bmw{
+.sect1{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    
 }
-.bmw img{
-    width: 100%;
-    height: 100vh;
+.sect1 h1{
+    margin-top: 90px;
 }
+
+
+
+
 
